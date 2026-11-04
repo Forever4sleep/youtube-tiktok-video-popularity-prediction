@@ -1,0 +1,21 @@
+[project]
+name = "youtube-tiktok-video-popularity-prediction"
+version = "0.1.0"
+description = "Yearly project at HSE"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pydantic>=2.14.2",
+    "pydantic-settings>=2.16.2",
+    "ruff>=0.17.3",
+]
+
+[project.scripts]
+app = "app.main:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "app"
