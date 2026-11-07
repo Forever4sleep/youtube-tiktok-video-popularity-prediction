@@ -143,6 +143,11 @@ mnesia/
 rabbitmq/
 rabbitmq-data/
 
+# datasets
+*.csv
+*.parquet
+data/
+
 # ActiveMQ
 activemq-data/
 

@@ -5,11 +5,19 @@ description = "Yearly project at HSE"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "httpx>=0.28.1",
+    "isodate>=0.7.2",
+    "pyarrow>=26.0.1",
     "pydantic>=2.14.2",
     "pydantic-settings>=2.16.2",
     "ruff>=0.17.3",
 ]
-
+[dependency-groups]
+dev = [
+    "matplotlib>=3.11.2",
+    "pandas>=3.1.1",
+    "seaborn>=0.13.2",
+]
 [project.scripts]
 app = "app.main:main"
 
